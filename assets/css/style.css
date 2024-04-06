@@ -118,4 +118,15 @@ footer {
   .nav-toggle-label {
     display: none;
   }
+
+  #logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0 0.5rem;
+  }
+
+  /* Main content tablet */
+  main {
+    margin-top: 85px;
+  }
 }
