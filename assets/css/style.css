@@ -4,14 +4,27 @@
   padding: 0;
 }
 
+/* General styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* General styles */
+  color: #3a3a3a;
+}
+/* Header */
 header {
   background-color: lightcoral;
 }
 
+/* Main */
 main {
   background-color: lightblue;
+  /* Make main element tuke up surplus to push footr down */
+  flex: 1 0 auto;
 }
 
+/* Footer */
 footer {
   background-color: orange;
 }
