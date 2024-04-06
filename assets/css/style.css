@@ -130,3 +130,12 @@ footer {
     margin-top: 85px;
   }
 }
+
+@media screen and (min-width: 992px) {
+
+  /*Header*/
+  #menu a:hover {
+    border-bottom: 1px solid #a1a1a1;
+
+  }
+}
