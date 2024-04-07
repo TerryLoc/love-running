@@ -95,6 +95,11 @@ footer {
   background-color: orange;
 }
 
+footer li {
+  list-style-type: none;
+
+}
+
 /* Media query: tablet and up (768px & up) */
 @media screen and (min-width: 768px) {
 
