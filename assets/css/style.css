@@ -18,6 +18,15 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
+}
+
 /* Header */
 header {
   background-color: #ffffff;
@@ -34,14 +43,6 @@ header {
 header a {
   text-decoration: none;
   color: inherit;
-}
-
-h1 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
-
 }
 
 #menu {
@@ -85,7 +86,6 @@ nav {
 
 /* Main */
 main {
-
   /* Make main element tuke up surplus to push footr down */
   flex: 1 0 auto;
   margin-top: 45px;
@@ -96,7 +96,67 @@ main {
   height: 600px;
   width: 100%;
   background: url(../images/hero-image.webp) no-repeat center center/cover;
+  position: relative;
+}
 
+#cover-text {
+  position: absolute;
+  background-color: rgba(241, 109, 107, 0.7);
+  font-size: 130%;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+#cover-text>h2,
+h3 {
+  color: #ffffff;
+}
+
+/* Reasons section */
+#reasons {
+  margin: 20px auto;
+  width: 90%;
+}
+
+#reasons>h2 {
+  font-size: 280%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#benefits div {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+#benefits h3,
+p {
+  color: #3a3a3a;
+}
+
+#benefits p {
+  padding: 0 20px;
+}
+
+/* image of runner */
+#circle-cover-bg {
+  height: 90vw;
+  width: 90vw;
+  background: url(../images/reasons-image.webp) no-repeat center center/cover;
+  margin-bottom: 20px;
+  /* make circle */
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#benfits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
@@ -148,6 +208,12 @@ main {
   main {
     margin-top: 85px;
   }
+
+  /* Hero image */
+  #cover-text {
+    width: 300px;
+    right: 50px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -155,6 +221,5 @@ main {
   /*Header*/
   #menu a:hover {
     border-bottom: 1px solid #a1a1a1;
-
   }
 }
