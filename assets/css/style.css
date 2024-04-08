@@ -76,7 +76,7 @@ nav {
   top: 100%;
 }
 
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
@@ -116,8 +116,8 @@ main {
   padding-left: 10px;
 }
 
-#cover-text>h2,
-#cover-text>h3 {
+#cover-text > h2,
+#cover-text > h3 {
   color: #ffffff;
 }
 
@@ -127,7 +127,7 @@ main {
   width: 90%;
 }
 
-#reasons>h2 {
+#reasons > h2 {
   font-size: 280%;
   margin-bottom: 20px;
   text-align: center;
@@ -161,7 +161,7 @@ main {
   max-height: 300px;
 }
 
-#benfits-image {
+#benefits-image {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,12 +209,11 @@ main {
   background-position: 75%;
   flex-grow: 1;
   align-items: center; */
-  background-image: url("../images/signup-image.webp");
+  background-image: url('../images/signup-image.webp');
   background-size: cover;
   background-position: 75%;
   padding: 20px 10% 0 10%;
   flex-grow: 1;
-
 }
 
 #signup-form {
@@ -228,7 +227,7 @@ main {
   padding: 30px;
 }
 
-#signup-form>h2 {
+#signup-form > h2 {
   color: #fafafa;
   margin-bottom: 20px;
 }
@@ -271,7 +270,6 @@ main {
   font-size: 100%;
 }
 
-
 /* Footer */
 #social-networks {
   text-align: center;
@@ -297,7 +295,6 @@ main {
 
 /* Media query: tablet and up (768px & up) */
 @media screen and (min-width: 768px) {
-
   /*Header*/
   nav {
     display: block;
@@ -344,12 +341,12 @@ main {
     width: 100%;
   }
 
-  .physical>div,
-  .mental>div {
+  .physical > div,
+  .mental > div {
     width: 75%;
   }
 
-  .mental>div {
+  .mental > div {
     text-align: end;
     align-self: flex-end;
   }
@@ -384,7 +381,6 @@ main {
 
 /* desktops */
 @media screen and (min-width: 992px) {
-
   /*Header*/
   #menu a:hover {
     border-bottom: 1px solid #a1a1a1;
@@ -406,11 +402,11 @@ main {
     order: 0;
   }
 
-  .physical>div {
+  .physical > div {
     align-self: flex-start;
   }
 
-  #benfits-image {
+  #benefits-image {
     order: 1;
   }
 
@@ -418,7 +414,14 @@ main {
     order: 2;
   }
 
-  .mental>div {
+  .mental > div {
     align-self: flex-end;
+  }
+
+  /*sign up from for desktop*/
+  #signup-form {
+    max-width: 750px;
+    top: 150px;
+    left: 20%;
   }
 }
