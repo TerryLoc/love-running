@@ -188,6 +188,16 @@ main {
   color: #fafafafa;
 }
 
+/* gallery */
+#photos {
+  line-height: 0;
+}
+
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
@@ -201,6 +211,14 @@ main {
   font-size: 160%;
   color: #3a3a3a;
   padding: 5%;
+}
+
+/* Media query: large or landscape phones 576px & up */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
 }
 
 /* Media query: tablet and up (768px & up) */
@@ -261,6 +279,11 @@ main {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery */
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* desktops */
@@ -269,6 +292,11 @@ main {
   /*Header*/
   #menu a:hover {
     border-bottom: 1px solid #a1a1a1;
+  }
+
+  /* Gallery */
+  #photos {
+    column-count: 4;
   }
 }
 
