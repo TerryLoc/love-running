@@ -1,100 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Meta tags for search engine-->
-    <meta
-      name="description"
-      content="Love Running. Club for runners in Dublin, Ireland. trail running. Dublin docklands and Pheonix Park" />
-    <meta
-      name="keywords"
-      content="love running, run, running club, runners, Ireland, Dublin, sport, exercise" />
-    <title>Love Runnning</title>
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <a href="index.html">
-        <h1 id="logo">Love Running</h1>
-      </a>
-      <input type="checkbox" id="nav-toggle" name="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
-      <nav>
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="signUp.html" class="active">Sign Up</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Main -->
-    <main>main</main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta tags for search engine-->
+  <meta name="description"
+    content="Love Running. Club for runners in Dublin, Ireland. trail running. Dublin docklands and Pheonix Park" />
+  <meta name="keywords" content="love running, run, running club, runners, Ireland, Dublin, sport, exercise" />
+  <title>Love Runnning</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-    <!-- Footer -->
-    <footer>
-      <ul id="social-networks">
-        <li>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener"
-            aria-label="Vist our facebook (opens in new tab)"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener"
-            aria-label="Vist our X page(opens in new tab)"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener"
-            aria-label="Vist our youtube page (opens in new tab)"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener"
-            aria-label="Vist our instagram (opens in new tab)"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </li>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <h1 id="logo">Love Running</h1>
+    </a>
+    <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="signUp.html" class="active">Sign Up</a></li>
       </ul>
-    </footer>
+    </nav>
+  </header>
 
-    <!-- Font awesome -->
-    <script
-      src="https://kit.fontawesome.com/712db90352.js"
-      crossorigin="anonymous"></script>
-  </body>
+  <!-- Main -->
+  <main>
+    <section id="signup">
+      <form action="" id="signup-form">
+        <h2>
+          <i class="fa-solid fa-heart-pulse"></i> let's get you signed up!
+        </h2>
+        <p>
+          First Name
+          <input type="text" id="first-name" placeholder="Joe" class="text-input" required /><br />
+        </p>
+        <p>
+          Last Name
+          <input type="text" id="last-name" placeholder="Blogs" class="text-input" required /><br />
+        </p>
+        <p>
+          Email Address
+          <input type="email" id="email-address" placeholder="Joe@email.com" class="text-input" required /><br />
+        </p>
+
+
+        <ul class="radio-buttons">
+          <li>
+            Road <input type="radio" id="road" name="running_preference" />
+          </li>
+          <li>
+            Trail
+            <input type="radio" id="trail" name="running_preference" />
+          </li>
+          <li>
+            Both <input type="radio" id="both" name="running_preference" />
+          </li>
+        </ul>
+
+        <input type="submit" class="join-button" value="Let's Run!">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <ul id="social-networks">
+      <li>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"
+          aria-label="Vist our facebook (opens in new tab)"><i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener"
+          aria-label="Vist our X page(opens in new tab)"><i class="fa-brands fa-x-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener"
+          aria-label="Vist our youtube page (opens in new tab)"><i class="fa-brands fa-youtube"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener"
+          aria-label="Vist our instagram (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/712db90352.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
