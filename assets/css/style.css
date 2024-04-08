@@ -246,3 +246,32 @@ h3 {
     border-bottom: 1px solid #a1a1a1;
   }
 }
+
+@media screen and (min-width: 1200px) {
+
+  #benefits {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .physical {
+    order: 0;
+  }
+
+  .physical>div {
+    align-self: flex-start;
+  }
+
+  #benfits-image {
+    order: 1;
+  }
+
+
+  .mental {
+    order: 2;
+  }
+
+  .mental>div {
+    align-self: flex-end;
+  }
+}
